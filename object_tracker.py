@@ -21,9 +21,9 @@ while (True):
             top_left = pt
             bottom_right = (top_left[0] + w, top_left[1] + h)
             demo = cv2.rectangle(frame, top_left, bottom_right, (0, 0, 255), 3)
-            cv2.putText(frame, 'Detected Pic : ' + str(i), (top_left[0], top_left[1] - 10), cv2.FONT_HERSHEY_PLAIN, 1.0,(255, 255, 255))
+            cv2.putText(frame, 'Detected Pic: ' + str(i), (top_left[0], top_left[1] - 10), cv2.FONT_HERSHEY_PLAIN, 1.4 , (255, 255, 255))
             if demo is not None :
-                print('Oject Found')
+                print('Object Found')
             break
 
 
