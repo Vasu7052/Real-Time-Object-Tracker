@@ -33,7 +33,7 @@ while (True):
                         cv2.FONT_HERSHEY_PLAIN, 1.0, (0, 0, 255))
 
 
-    cv2.imshow('Test', frame)
+    cv2.imshow('Object Tracker', frame)
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
