@@ -14,3 +14,7 @@ This is a real-time object recognition project developed using Python Programmin
 * Add your own image into the images folder
 * And give reference of it into the python code
 * Run the code :)
+
+## Features
+* Track as many as images at a same time 
+* Change the threshold as on your own requirement as see the result
