@@ -15,6 +15,6 @@ This is a real-time object recognition project developed using Python Programmin
 * And give reference of it into the python code
 * Run the code :)
 
-## Two Methods
-* There are two methods of object tracking into it .
-* Both have their own accuracy and procedure
+## Features
+* Track as many as images at a same time 
+* Change the threshold as on your own requirement as see the result
