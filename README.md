@@ -13,6 +13,7 @@ This is a real-time object recognition project developed using Python Programmin
 ## For your Image
 * Add your own image into the images folder
 * And give reference of it into the python code
+* Run the code :)
 
 ## Two Methods
 * There are two methods of object tracking into it .
