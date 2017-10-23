@@ -11,7 +11,7 @@ while (True):
     ret, frame = cap.read()
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
-    for i in range(1,2):
+    for i in range(1,3):
         template = cv2.imread('images/pic'+str(i)+'.png', 0)
         w, h = template.shape[::-1]
 
@@ -27,12 +27,14 @@ while (True):
                 bottom_right = (top_left[0] + w, top_left[1] + h)
                 demo = cv2.rectangle(frame, top_left, bottom_right, (0, 0, 255), 3)
                 if i is 1 :
-                    cv2.putText(frame, 'Mobile' , (top_left[0], top_left[1] - 10), cv2.FONT_HERSHEY_PLAIN,1.4, (255, 255, 255))
+                    cv2.putText(frame, 'Mobile' , (top_left[0], top_left[1] - 10), cv2.FONT_HERSHEY_PLAIN,1.4, (0, 255, 0) , 2)
+                elif i is 2 :
+                    cv2.putText(frame, 'Vasu', (top_left[0], top_left[1] - 10), cv2.FONT_HERSHEY_PLAIN, 1.4,(0, 255, 0) , 2)
 
                 if demo is not None :
                     if onlyOnce is True :
                         alreadyDetected[i] = True
-                    print('Object Found')
+                    print('Object' , i , 'Found')
                 break
 
 
