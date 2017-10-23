@@ -3,6 +3,7 @@ import numpy as np
 
 cap = cv2.VideoCapture(0)  # Webcam Capture
 
+totalNoOfImages = 2
 onlyOnce = False
 alreadyDetected = [False,False,False,False,False]
 
@@ -11,7 +12,7 @@ while (True):
     ret, frame = cap.read()
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
-    for i in range(1,3):
+    for i in range(1,totalNoOfImages+1):
         template = cv2.imread('images/pic'+str(i)+'.png', 0)
         w, h = template.shape[::-1]
 
