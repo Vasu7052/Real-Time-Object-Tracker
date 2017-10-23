@@ -12,8 +12,9 @@ This is a real-time object recognition project developed using Python Programmin
 
 ## For your Image
 * Add your own image into the images folder
+* Name your image like "pic" + number + ".png"
 * And give reference of it into the python code
-* Change Number of images in for loop & Done!
+* Change Number of images in the code & Done!
 * Run the code :)
 
 ## Features
